@@ -1,0 +1,47 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.1",
+  "description": "Node Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node entry.js -c 100 -g products",
+    "watch": "nodemon entry.js",
+    "precommit": "pretty-quick --staged"
+  },
+  "author": "Viraj Trivedi <inf3cti0n95@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.4"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "husky": "^0.14.3",
+    "nodemon": "^1.17.1",
+    "prettier": "1.11.1",
+    "pretty-quick": "^1.4.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": ["transform-object-rest-spread"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inf3cti0n95/node-boilerplate.git"
+  },
+  "keywords": ["Node", "Boilerplate"],
+  "bugs": {
+    "url": "https://github.com/inf3cti0n95/node-boilerplate/issues"
+  },
+  "homepage": "https://github.com/inf3cti0n95/node-boilerplate#readme"
+}
